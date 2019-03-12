@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Simple Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="calc-container">
+      <div class="calc-view">
+        <input type="text" class="operation" value="" disabled /><br />
+        <input type="text" class="result" value="0" disabled />
+      </div>
+      <div class="calc-button">
+        
+        <button class="btn-clr">Clear</button>
+        <div class="row">
+          <button class="number" data-number="7" data-key="55">7</button>
+          <button class="number" data-number="8" data-key="56">8</button>
+          <button class="number" data-number="9" data-key="57">9</button>
+          <button class="operator" data-operator="/">/</button>
+        </div>
+        <div class="row">
+          <button class="number" data-number="4" data-key="52">4</button>
+          <button class="number" data-number="5" data-key="53">5</button>
+          <button class="number" data-number="6" data-key="54">6</button>
+          <button class="operator" data-operator="*">x</button>
+        </div>
+        <div class="row">
+          <button class="number" data-number="1" data-key="49">1</button>
+          <button class="number" data-number="2" data-key="50">2</button>
+          <button class="number" data-number="3" data-key="51">3</button>
+          <button class="operator" data-operator="-">-</button>
+        </div>
+
+        <div class="row">
+          <button class="number" data-number="0" data-key="48">0</button>
+          <button class="operator" data-operator="=">=</button>
+          <button class="operator" data-operator="+">+</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center">Try Using Keyboard</p>
+    <script src="script.js"></script>
+  </body>
+</html>
